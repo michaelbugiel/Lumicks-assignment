@@ -89,7 +89,6 @@ N_ROI = int(N_height/2)
 
 y_ROI = np.array(image[N_ROI-1,:])
 x_ROI = list(range(N_width))
-print(len(x_ROI))
 
 H, A, x0, sigma = gauss_fit(x_ROI, y_ROI)      # do the fitting
 print('Standard deviation sigma of the Gaussian is ',sigma)
